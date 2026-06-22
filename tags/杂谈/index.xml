@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>杂谈 on EpicCodeKing</title><link>https://epiccodeking.github.io/tags/%E6%9D%82%E8%B0%88/</link><description>Recent content in 杂谈 on EpicCodeKing</description><generator>Hugo</generator><language>zh-cn</language><lastBuildDate>Mon, 22 Jun 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://epiccodeking.github.io/tags/%E6%9D%82%E8%B0%88/index.xml" rel="self" type="application/rss+xml"/><item><title>Hello World — 从这篇开始记录我的网络工程之路</title><link>https://epiccodeking.github.io/posts/hello-world/</link><pubDate>Mon, 22 Jun 2026 00:00:00 +0000</pubDate><guid>https://epiccodeking.github.io/posts/hello-world/</guid><description>&lt;h2 id="这个博客做什么"&gt;这个博客做什么&lt;/h2&gt;
+&lt;p&gt;我是 EpicCodeKing，一名网络工程专业的大三学生。&lt;/p&gt;
+&lt;p&gt;这里会记录我学习数通（OSPF / BGP / VXLAN）和网络自动化（Python + Netmiko + Flask）的过程。每学完一个协议、做完一个实验、踩过一个坑，就写一篇文章。&lt;/p&gt;
+&lt;h2 id="为什么要写"&gt;为什么要写&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;教别人是最好的学习方式&lt;/strong&gt;——写不清楚说明没真懂&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;面试时的证据&lt;/strong&gt;——简历上的「熟悉 OSPF」不如一篇带抓包截图的分析有说服力&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;长期积累&lt;/strong&gt;——一年后回头看，能看到自己走了多远&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="接下来会写什么"&gt;接下来会写什么&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;OSPF 邻居状态机详解（附 eNSP 抓包）&lt;/li&gt;
+&lt;li&gt;BGP 13 条选路规则实验验证&lt;/li&gt;
+&lt;li&gt;Python + Netmiko 批量备份网络设备配置&lt;/li&gt;
+&lt;li&gt;网络自动化运维平台开发记录&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Stay tuned.&lt;/p&gt;</description></item></channel></rss>
