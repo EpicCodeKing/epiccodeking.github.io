@@ -3,6 +3,9 @@ locale = 'zh-cn'
 title = 'EpicCodeKing'
 theme = 'PaperMod'
 
+[markup.goldmark.renderer]
+  unsafe = true
+
 [params]
   author = 'EpicCodeKing'
   defaultTheme = 'auto'
