@@ -1,7 +1,7 @@
 +++
 date = '2026-07-13T18:44:00+08:00'
 draft = false
-title = 'MSTP-发布版'
+title = 'MSTP 拓扑简要介绍'
 tags = ["数通", "MSTP"]
 description = "通俗讲解 MSTP 网络拓扑结构：域、实例、CIST 收敛与跨域通信。"
 +++
