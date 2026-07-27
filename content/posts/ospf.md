@@ -30,27 +30,27 @@ cost（开销）：100Mbps / 接口带宽，向上取整。100Mbps 是参考值�
 
 ### 传输报文类型
 
-![传输报文类型](/assets/images/ospf-msg-types.png)
+![传输报文类型](/images/ospf-msg-types.png)
 
 ### 邻居状态
 
-![邻居状态](/assets/images/ospf-neighbor-states.png)
+![邻居状态](/images/ospf-neighbor-states.png)
 
 对于组播网络，非 DR/BDR 之前会停留在 2-Way 阶段
 
 ### OSPF 公共报文头
 
-![OSPF 公共报文头](/assets/images/ospf-header.png)
+![OSPF 公共报文头](/images/ospf-header.png)
 
 ### Hello
 
-![Hello 报文](/assets/images/ospf-hello.png)
+![Hello 报文](/images/ospf-hello.png)
 
 Hello：除帧中继和虚链路外，都是 224.0.0.5 组播发送。其中包含邻居列表。不触发发送，周期性发送。
 
 ### DBD
 
-![DBD 报文](/assets/images/ospf-dbd.png)
+![DBD 报文](/images/ospf-dbd.png)
 
 flags-init 只在第一次发送时为 1，用于开启主从判断
 
@@ -58,11 +58,11 @@ flags-ms 在未知前都为 1，知道主从后从方改为 0
 
 **LSA 摘要条目**
 
-![LSA 摘要条目](/assets/images/ospf-lsa-header.png)
+![LSA 摘要条目](/images/ospf-lsa-header.png)
 
 ### 常见 LSA 类型
 
-![常见 LSA 类型](/assets/images/ospf-lsa-types.png)
+![常见 LSA 类型](/images/ospf-lsa-types.png)
 
 ### 周期性
 
