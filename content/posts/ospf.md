@@ -14,9 +14,9 @@ description = "以邻居状态为轴理解 OSPF 邻接建立过程，涵盖报�
 
 OSPF 的笔记不再整理，仅在此简述大致过程，读者再看笔记理解细节：
 
-        区域内部：理解应以**邻居状态**为轴，两台路由器从 Down 到 Full 完成两台机器的同步。本文的连接过程省略了 Loading 状态，此状态下路由器用第一类 LSA 数据搭载于 LSR 报文上进行同步。线路生产者定时泛洪自己产生的线路。定时清除没有更新的线路。有新变化立刻将变化内容泛洪到全局。
-
-        区域之间：区域之间不传递具体链路信息，具体到表现就是，网络内部路由器只知道某个网段要往某台边界路由器走，不再关心边界路由器之后的路线。
+> 区域内部：理解应以**邻居状态**为轴，两台路由器从 Down 到 Full 完成两台机器的同步。本文的连接过程省略了 Loading 状态，此状态下路由器用第一类 LSA 数据搭载于 LSR 报文上进行同步。线路生产者定时泛洪自己产生的线路。定时清除没有更新的线路。有新变化立刻将变化内容泛洪到全局。
+>
+> 区域之间：区域之间不传递具体链路信息，具体到表现就是，网络内部路由器只知道某个网段要往某台边界路由器走，不再关心边界路由器之后的路线。
 
 ---
 
@@ -30,27 +30,27 @@ cost（开销）：100Mbps / 接口带宽，向上取整。100Mbps 是参考值�
 
 ### 传输报文类型
 
-<img src="file:///C:/Users/24385/Pictures/Typedown/f3cd2801-5e32-4961-a15e-76a222bdcb6f.png" title="" alt="f3cd2801-5e32-4961-a15e-76a222bdcb6f" style="zoom:33%;">
+![传输报文类型](/assets/images/ospf-msg-types.png)
 
 ### 邻居状态
 
-<img src="file:///C:/Users/24385/Pictures/Typedown/68e1fc02-3b0c-4228-aed0-a40e4070454e.png" title="" alt="68e1fc02-3b0c-4228-aed0-a40e4070454e" style="zoom:33%;">
+![邻居状态](/assets/images/ospf-neighbor-states.png)
 
 对于组播网络，非 DR/BDR 之前会停留在 2-Way 阶段
 
 ### OSPF 公共报文头
 
-<img src="file:///C:/Users/24385/Pictures/Typedown/1ef4a841-4318-42ba-b672-f0c6ac20ea6d.png" title="" alt="1ef4a841-4318-42ba-b672-f0c6ac20ea6d" style="zoom:33%;">
+![OSPF 公共报文头](/assets/images/ospf-header.png)
 
 ### Hello
 
-<img src="file:///C:/Users/24385/Pictures/Typedown/8642bb99-255c-4b8a-b3a7-f5478002019f.png" title="" alt="8642bb99-255c-4b8a-b3a7-f5478002019f" style="zoom:33%;">
+![Hello 报文](/assets/images/ospf-hello.png)
 
 Hello：除帧中继和虚链路外，都是 224.0.0.5 组播发送。其中包含邻居列表。不触发发送，周期性发送。
 
 ### DBD
 
-<img src="file:///C:/Users/24385/Pictures/Typedown/b45b51c7-2e96-49f3-b6f0-1379b3eb7299.png" title="" alt="b45b51c7-2e96-49f3-b6f0-1379b3eb7299" style="zoom:33%;">
+![DBD 报文](/assets/images/ospf-dbd.png)
 
 flags-init 只在第一次发送时为 1，用于开启主从判断
 
@@ -58,11 +58,11 @@ flags-ms 在未知前都为 1，知道主从后从方改为 0
 
 **LSA 摘要条目**
 
-<img src="file:///C:/Users/24385/Pictures/Typedown/30fe68d8-a5a4-49bf-88ba-678b59b7ab77.png" title="" alt="30fe68d8-a5a4-49bf-88ba-678b59b7ab77" style="zoom:33%;">
+![LSA 摘要条目](/assets/images/ospf-lsa-header.png)
 
 ### 常见 LSA 类型
 
-<img src="file:///C:/Users/24385/Pictures/Typedown/8a1748af-2dc2-4f18-b277-efd8bbe0d4e0.png" title="" alt="8a1748af-2dc2-4f18-b277-efd8bbe0d4e0" style="zoom:33%;">
+![常见 LSA 类型](/assets/images/ospf-lsa-types.png)
 
 ### 周期性
 
